@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvores de Decisão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Árvores de Decisão</h1>
+        <nav>
+            <ul>
+                <li><a href="#id3">ID3</a></li>
+                <li><a href="#c45">C4.5</a></li>
+                <li><a href="#c50">C5.0</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Introdução</h2>
+            <p>Árvores de decisão são um método popular de aprendizado de máquina que modelam decisões complexas a
+                partir de dados e exemplos. Elas são usadas para classificação e regressão.</p>
+        </section>
+        <section id="id3">
+            <h2>ID3 (Iterative Dichotomiser 3)</h2>
+            <p>O ID3 foi um dos primeiros algoritmos desenvolvidos para construir árvores de decisão. Foi proposto por
+                Ross Quinlan e utiliza o conceito de entropia e ganho de informação para decidir sobre a melhor divisão
+                dos dados em cada nó da árvore.</p>
+            <p><strong>Principais características do ID3:</strong></p>
+            <ul>
+                <li>Utiliza entropia para medir a impureza dos dados.</li>
+                <li>Calcula o ganho de informação para determinar a melhor característica de divisão.</li>
+                <li>Pode gerar árvores muito complexas, propensas a overfitting.</li>
+            </ul>
+            <p><strong>Exemplo:</strong> Imagine um conjunto de dados de clientes de um banco com atributos como idade,
+                renda e histórico de crédito. O ID3 decidiria a melhor maneira de classificar os clientes como "alto
+                risco" ou "baixo risco" para empréstimos com base nesses atributos.</p>
+        </section>
+        <section id="c45">
+            <h2>C4.5</h2>
+            <p>O C4.5 é uma extensão do ID3, também desenvolvido por Ross Quinlan, para superar algumas limitações do
+                ID3, como a incapacidade de lidar com dados contínuos e valores ausentes.</p>
+            <p><strong>Principais características do C4.5:</strong></p>
+            <ul>
+                <li>Trata dados contínuos e discretos.</li>
+                <li>Lida com valores ausentes substituindo-os pela média ponderada dos valores conhecidos.</li>
+                <li>Realiza poda da árvore após a construção para evitar overfitting.</li>
+            </ul>
+            <p><strong>Exemplo:</strong> Usando o mesmo conjunto de dados de clientes do banco, o C4.5 pode lidar melhor
+                com dados contínuos, como renda, e tratar clientes com informações incompletas, como histórico de
+                crédito ausente.</p>
+        </section>
+        <section id="c50">
+            <h2>C5.0</h2>
+            <p>O C5.0 é uma versão mais avançada e eficiente do C4.5, também desenvolvido por Ross Quinlan. Ele foi
+                projetado para ser mais rápido e produzir árvores menores e mais precisas.</p>
+            <p><strong>Melhorias do C5.0 em relação ao C4.5:</strong></p>
+            <ul>
+                <li>Maior eficiência computacional, especialmente para grandes conjuntos de dados.</li>
+                <li>Melhor manipulação de dados ruidosos e valores ausentes.</li>
+                <li>Suporte a boosting para melhorar a precisão das previsões.</li>
+            </ul>
+            <p><strong>Exemplo:</strong> Utilizando o conjunto de dados de clientes, o C5.0 pode criar uma árvore mais
+                compacta e precisa, utilizando técnicas de boosting para melhorar a classificação de clientes com base
+                em múltiplos atributos.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Francielli Andreghetto e Antonio de Souza</p>
+    </footer>
+</body>
+
+</html>
